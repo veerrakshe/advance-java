@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+
+
+	<!-- ----------------Property Based-------------------------- -->
+
+
+	<bean id="stu" class="Entity.Student">
+
+		<property name="studentId" value="101"></property>
+		<property name="studentName" value="Veer"></property>
+		<property name="listOfCourses">
+			<list>
+				<value>Java</value>
+				<value>C++</value>
+				<value>Python</value>
+			</list>
+		</property>
+		<property name="listOfNumbers">
+			<set>
+				<value>101</value>
+				<value>102</value>
+				<value>103</value>
+			</set>
+		</property>
+		<property name="listOfStudentMarks">
+			<map>
+				<entry key="Veer" value="80"></entry>
+				<entry key="Vishal" value="90"></entry>
+				<entry key="Rahul" value="90"></entry>
+			</map>
+		</property>
+
+		<!-- --------------Constructor Based----------------------------------- -->
+
+		<constructor-arg index="0" value="101"></constructor-arg>
+		<constructor-arg index="1" value="Veer"></constructor-arg>
+		<constructor-arg index="2">
+			<list>
+				<value>Java</value>
+				<value>C++</value>
+				<value>Cloud</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg index="3">
+			<set>
+				<value>101</value>
+				<value>102</value>
+				<value>103</value>
+			</set>
+		</constructor-arg>
+		<constructor-arg index="4">
+			<map>
+				<entry key="Veer" value="80"></entry>
+				<entry key="Vishal" value="90"></entry>
+				<entry key="Rahul" value="90"></entry>
+			</map>
+		</constructor-arg>
+
+	</bean>
+
+
+
+</beans>

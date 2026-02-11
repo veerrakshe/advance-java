@@ -1,0 +1,14 @@
+# Eclipse
+.metadata/
+.settings/
+.recommenders/
+
+# Build output
+bin/
+target/
+
+# Java
+*.class
+
+# OS
+.DS_Store

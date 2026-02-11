@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="address1" class="com.Entity.Address">
+		<property name="country" value="IND"></property>
+		<property name="landmark" value="Near PCCOE"></property>
+		<property name="pincode" value="456478"></property>
+	</bean>
+
+	<bean id="course" class="com.Entity.Course">
+		<property name="courseId" value="01"></property>
+		<property name="courseName" value="Java"></property>
+	</bean>
+
+	<bean id="faculty" class="com.Entity.Faculty">
+		<property name="facultyId" value="01"></property>
+		<property name="facultyName" value="Vishal"></property>
+	</bean>
+
+
+	<bean id="stu" class="com.Entity.Student" autowire="byName">
+		<property name="rollno" value="123"></property>
+		<property name="sname" value="Vishal"></property>
+
+
+
+		<!-- <constructor-arg value="101"></constructor-arg> <constructor-arg value="RAJ"></constructor-arg> -->
+
+
+	</bean>
+
+
+
+</beans>
