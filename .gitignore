@@ -1,14 +1,30 @@
-# Eclipse
+# ===============================
+# Eclipse workspace metadata
+# ===============================
 .metadata/
-.settings/
-.recommenders/
 
-# Build output
+# ===============================
+# Eclipse project files
+# ===============================
+.settings/
 bin/
 target/
+.classpath
+.project
 
-# Java
-*.class
+# ===============================
+# Logs
+# ===============================
+*.log
 
-# OS
+# ===============================
+# OS Files
+# ===============================
 .DS_Store
+Thumbs.db
+
+# ===============================
+# Optional: build folders
+# ===============================
+out/
+build/
